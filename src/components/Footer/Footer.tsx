@@ -59,22 +59,22 @@ const Footer: React.FC<FooterProps> = ({ navLinks = [] }) => {
   const contactInfo = [
     {
       icon: <FaMapMarkerAlt />,
-      text: '123 Dance Street, Art District, City, 560001',
-      url: 'https://maps.google.com'
+      text: 'HSR Layout, Bangalore',
+      url: 'https://maps.app.goo.gl/LMXmadcjdaiwL6wf6'
     },
     {
       icon: <FaPhone />,
-      text: '+91 98765 43210',
-      url: 'tel:+919876543210'
+      text: '+91 7013316050',
+      url: 'tel:+917013316050'
     },
     {
       icon: <FaEnvelope />,
-      text: 'info@kalasharadhi.com',
-      url: 'mailto:info@kalasharadhi.com'
+      text: 'smalleswari759@gmail.com',
+      url: 'mailto:smalleswari759@gmail.com'
     },
     {
       icon: <FaClock />,
-      text: 'Mon-Sat: 9:00 AM - 8:00 PM',
+      text: 'Mon-Sun: 6:00 AM - 6:00 PM',
       url: ''
     },
   ];
@@ -83,30 +83,6 @@ const Footer: React.FC<FooterProps> = ({ navLinks = [] }) => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-container">
-          <div className="footer-widget about-widget">
-            <Link to="/" className="footer-logo">
-              <span className="logo-text">Kala Sharadhi</span>
-              <span className="logo-subtext">School of Classical Dance</span>
-            </Link>
-            <p className="about-text">
-              Dedicated to preserving and promoting the rich heritage of Indian classical dance through 
-              quality education, performances, and cultural events.
-            </p>
-            <div className="social-links">
-              {socialLinks.map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="social-link"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
           
           <div className="footer-widget">
             <h3 className="widget-title">Quick Links</h3>
@@ -114,7 +90,6 @@ const Footer: React.FC<FooterProps> = ({ navLinks = [] }) => {
               {links.map((link) => (
                 <li key={link.path}>
                   <Link to={link.path} className="footer-link">
-                    <FaArrowRight className="link-icon" />
                     {link.label}
                   </Link>
                 </li>
@@ -139,23 +114,14 @@ const Footer: React.FC<FooterProps> = ({ navLinks = [] }) => {
               ))}
             </ul>
           </div>
-          
-          <div className="footer-widget">
-            <h3 className="widget-title">Newsletter</h3>
-            <p>Subscribe to our newsletter for updates on classes, workshops, and performances.</p>
-            <form className="newsletter-form">
-              <div className="form-group">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="form-input"
-                  required 
-                />
-                <button type="submit" className="form-button">
-                  <FaArrowRight />
-                </button>
-              </div>
-            </form>
+
+          <div className="footer-widget about-widget">
+            <Link to="/" className="footer-logo">
+              <span className="logo-text">Abhinaya Sutra</span>
+            </Link>
+            <p className="about-text">
+              Dedicated to preserving and celebrating the rich heritage of Indian classical dance—especially the Pandanallur and Thanjavur banis of Bharatanatyam—through rigorous training, evocative performances, and vibrant cultural events.
+            </p>
           </div>
         </div>
       </div>
@@ -163,7 +129,7 @@ const Footer: React.FC<FooterProps> = ({ navLinks = [] }) => {
       <div className="footer-bottom">
         <div className="footer-container">
           <div className="copyright">
-            &copy; {currentYear} Kala Sharadhi. All rights reserved.
+            &copy; {currentYear} Abhinaya Sutra. All rights reserved.
           </div>
           <div className="footer-legal">
             <Link to="/privacy-policy" className="legal-link">Privacy Policy</Link>

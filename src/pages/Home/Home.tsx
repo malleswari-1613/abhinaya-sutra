@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <div className="home">
       <div className="hero">
         <div className="hero-content">
-          <h1>Welcome to Kala Sharadhi</h1>
+          <h1>Welcome to Abhinaya Sutra</h1>
           <p>Experience the divine art of classical dance</p>
           <div className="hero-btns">
             <Link to="/classes" className="btn btn-primary">
@@ -24,17 +24,17 @@ const Home: React.FC = () => {
         <div className="feature-card">
           <i className="fas fa-gem"></i>
           <h3>Traditional Techniques</h3>
-          <p>Learn authentic classical dance forms from expert instructors</p>
+          <p>Learn authentic classical dance forms under the guidance of an expert instructor</p>
         </div>
         <div className="feature-card">
-          <i className="fas fa-users"></i>
-          <h3>Community</h3>
-          <p>Join a vibrant community of dance enthusiasts</p>
+          <i className="fas fa-user"></i>
+          <h3>Personalized Instruction</h3>
+          <p>Benefit from one-on-one attention in a focused, nurturing environment</p>
         </div>
         <div className="feature-card">
           <i className="fas fa-calendar-alt"></i>
           <h3>Regular Events</h3>
-          <p>Participate in performances and cultural events</p>
+          <p>Participate in performances and cultural events to showcase your progress</p>
         </div>
       </section>
 

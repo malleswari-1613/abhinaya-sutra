@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Gallery.css';
 
 const Gallery: React.FC = () => {
@@ -7,39 +6,33 @@ const Gallery: React.FC = () => {
   const galleryItems = [
     {
       id: 1,
-      title: 'Classical Performance',
-      image: 'https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      category: 'Bharatanatyam'
+      title: 'Group Performance',
+      image: 'https://ih1.redbubble.net/image.4777969594.4311/flat,750x,075,f-pad,750x1000,f8f8f8.jpg',
     },
     {
       id: 2,
-      title: 'Traditional Dance',
-      image: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d808?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      category: 'Kathak'
+      title: 'Solo Performance',
+      image: 'https://img.freepik.com/free-vector/indian-woman-dancing_1196-451.jpg',
     },
     {
       id: 3,
       title: 'Dance Workshop',
-      image: 'https://images.unsplash.com/photo-1533856493583-30c19163a352?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      category: 'Workshop'
+      image: 'https://thumbs.dreamstime.com/b/captivating-digital-artwork-showcases-bharatanatyam-dancer-dynamic-pose-rendered-intricate-stippling-technique-379817324.jpg',
     },
     {
       id: 4,
-      title: 'Group Performance',
-      image: 'https://images.unsplash.com/photo-1514525252781-2f9bcd159c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      category: 'Group'
+      title: 'Cultural Event',
+      image: 'https://i.pinimg.com/736x/fa/79/2e/fa792e7837849c4b91038e69078f6644.jpg',
     },
     {
       id: 5,
       title: 'Solo Performance',
-      image: 'https://images.unsplash.com/photo-1530103862676-de8c6de333e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      category: 'Solo'
+      image: 'https://i.pinimg.com/736x/a5/93/1a/a5931aea328810b69ab6611734e0fd69.jpg',
     },
     {
       id: 6,
-      title: 'Cultural Event',
-      image: 'https://images.unsplash.com/photo-1514525252781-2f9bcd159c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      category: 'Event'
+      title: 'Solo Performance',
+      image: 'https://static.vecteezy.com/system/resources/previews/023/864/282/non_2x/woman-dancer-performing-bharatnatyam-on-white-background-free-vector.jpg',
     },
   ];
 
@@ -54,13 +47,13 @@ const Gallery: React.FC = () => {
 
       <section className="gallery-container">
         <div className="container">
-          <div className="gallery-filters">
+          {/* <div className="gallery-filters">
             <button className="filter-btn active">All</button>
             <button className="filter-btn">Bharatanatyam</button>
             <button className="filter-btn">Kathak</button>
             <button className="filter-btn">Workshops</button>
             <button className="filter-btn">Events</button>
-          </div>
+          </div> */}
           
           <div className="gallery-grid">
             {galleryItems.map((item) => (
@@ -70,8 +63,6 @@ const Gallery: React.FC = () => {
                   <div className="gallery-overlay">
                     <div className="overlay-content">
                       <h3>{item.title}</h3>
-                      <p>{item.category}</p>
-                      <button className="view-btn">View</button>
                     </div>
                   </div>
                 </div>
