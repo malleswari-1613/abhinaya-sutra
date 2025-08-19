@@ -1,0 +1,152 @@
+/* Hero Section */
+.home {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center center/cover no-repeat;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: #9c27b0;
+  color: white;
+  border: 2px solid #9c27b0;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #9c27b0;
+  border-color: white;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  background: #f9f9f9;
+}
+
+.feature-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #9c27b0;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    padding: 3rem 1rem;
+  }
+  
+  .feature-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}

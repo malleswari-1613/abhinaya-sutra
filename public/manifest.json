@@ -1,0 +1,65 @@
+{
+  "short_name": "Kala Sharadhi",
+  "name": "Kala Sharadhi - Classical Dance Academy",
+  "description": "Premier Classical Dance Academy offering training in Bharatanatyam, Kathak, and other Indian classical dance forms.",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/icon-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#9c27b0",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["education", "lifestyle", "music"],
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.jpg",
+      "type": "image/jpeg",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/screenshot2.jpg",
+      "type": "image/jpeg",
+      "sizes": "750x1334"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Our Classes",
+      "short_name": "Classes",
+      "description": "View our dance class offerings",
+      "url": "/classes",
+      "icons": [{ "src": "/images/icon-classes.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Upcoming Events",
+      "short_name": "Events",
+      "description": "View upcoming dance events and performances",
+      "url": "/events"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/"
+}

@@ -1,0 +1,303 @@
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* About Content Section */
+.about-content {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.about-text h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background: #9c27b0;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: translateY(-10px);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  background: #f9f9f9;
+  padding: 5rem 0;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.mission-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission-card i {
+  font-size: 2.5rem;
+  color: #9c27b0;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.mission-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.mission-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Guru Section */
+.guru-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.guru-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.guru-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background: #9c27b0;
+  transform: translateX(-50%);
+}
+
+.guru-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.guru-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.guru-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.guru-image:hover img {
+  transform: scale(1.05);
+}
+
+.guru-details h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.guru-details .title {
+  color: #9c27b0;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.guru-details p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.guru-qualifications {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.qualification {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.qualification i {
+  color: #9c27b0;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #9c27b0;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #9c27b0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #9c27b0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .about-grid,
+  .guru-profile {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    order: -1;
+  }
+  
+  .guru-profile {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+  }
+  
+  .about-content,
+  .mission-vision,
+  .guru-section {
+    padding: 3rem 0;
+  }
+  
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .guru-qualifications {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-text h2,
+  .guru-section h2 {
+    font-size: 2rem;
+  }
+  
+  .guru-profile {
+    padding: 1.5rem;
+  }
+}

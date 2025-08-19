@@ -1,0 +1,41 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kalasharadhi.com/sitemap.xml
+
+# Disallow crawling of the following:
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /cart/
+
+# Allow crawling of media files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Crawl-delay: 10
+
+# Crawl-Delay: 5
+
+# Google-specific
+User-agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+
+# Bing-specific
+User-agent: bingbot
+Crawl-delay: 10
+
+# Yandex-specific
+User-agent: Yandex
+Crawl-delay: 10
