@@ -1,0 +1,331 @@
+/* Navbar Styles */
+.navbar {
+  background: rgba(255, 255, 255, 0.97);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+  height: 70px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+/* Logo Styles */
+.navbar-logo {
+  color: #333;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #9c27b0, #7b1fa2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.logo-subtext {
+  font-size: 0.7rem;
+  color: #666;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+.hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.hamburger span:nth-child(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+  background: #9c27b0;
+}
+
+.hamburger.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 22px;
+  left: 8px;
+  background: #9c27b0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.nav-links {
+  color: #333;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-item:not(.cta-button) .nav-links:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #9c27b0;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-item:not(.cta-button):hover .nav-links:after {
+  width: 60%;
+}
+
+.nav-item.active .nav-links {
+  color: #9c27b0;
+  font-weight: 600;
+}
+
+.nav-item.active .nav-links:after {
+  width: 60%;
+  background-color: #9c27b0;
+}
+
+/* CTA Button */
+.cta-button {
+  margin-left: 1rem;
+}
+
+.nav-cta {
+  background: #9c27b0;
+  color: white !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: 600 !important;
+  border: 2px solid transparent;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem !important;
+}
+
+.nav-cta:hover {
+  background: #7b1fa2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.3);
+  color: white !important;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 960px) {
+  .navbar {
+    height: 70px;
+  }
+  
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: white;
+    padding: 2rem 0;
+    margin: 0;
+    z-index: 999;
+    overflow-y: auto;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  
+  .nav-item {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+  
+  .nav-item:not(.cta-button) .nav-links:after {
+    display: none;
+  }
+  
+  .nav-item.active .nav-links {
+    color: #9c27b0;
+    font-weight: 600;
+  }
+  
+  .cta-button {
+    margin: 1.5rem 0 0;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  
+  .nav-cta {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0.8rem !important;
+    display: block;
+  }
+  
+  .mobile-menu-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/* Add scroll behavior */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Navbar scroll effect */
+.navbar.scrolled {
+  height: 70px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add animation for nav items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-item {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Add delay for each nav item */
+.nav-item:nth-child(1) { animation-delay: 0.1s; }
+.nav-item:nth-child(2) { animation-delay: 0.2s; }
+.nav-item:nth-child(3) { animation-delay: 0.3s; }
+.nav-item:nth-child(4) { animation-delay: 0.4s; }
+.nav-item:nth-child(5) { animation-delay: 0.5s; }
+.nav-item.cta-button { animation-delay: 0.6s; }
