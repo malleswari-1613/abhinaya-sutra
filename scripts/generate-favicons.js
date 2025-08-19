@@ -20,18 +20,21 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
+const rimraf = require('rimraf');
+const mkdirp = require('mkdirp');
 const { promisify } = require('util');
-const rimraf = promisify(require('rimraf'));
-const mkdirp = promisify(require('mkdirp'));
+
+// Promisify the rimraf function
+const rimrafAsync = promisify(rimraf);
 
 // Configuration
 const CONFIG = {
   sourceFile: path.join(__dirname, '../../logo-source.png'),
   outputDir: path.join(__dirname, '../../public/images/favicons'),
-  backgroundColor: { r: 255, g: 255, b: 255, alpha: 1 },
   padding: 0.1, // 10% padding around the icon
+  backgroundColor: { r: 255, g: 255, b: 255, alpha: 0 }, // Transparent background
   sizes: [
-    // Favicon
+    // Standard favicon
     { width: 16, height: 16, name: 'favicon-16x16.png' },
     { width: 32, height: 32, name: 'favicon-32x32.png' },
     { width: 48, height: 48, name: 'favicon.ico' },
@@ -47,11 +50,10 @@ const CONFIG = {
     { width: 152, height: 152, name: 'apple-touch-icon-152x152.png' },
     { width: 167, height: 167, name: 'apple-touch-icon-167x167.png' },
     { width: 180, height: 180, name: 'apple-touch-icon-180x180.png' },
-    { width: 1024, height: 1024, name: 'apple-touch-icon.png' },
+    { width: 1024, height: 1024, name: 'apple-touch-icon-1024x1024.png' },
     
     // Android/Chrome
     { width: 192, height: 192, name: 'android-chrome-192x192.png' },
-    { width: 256, height: 256, name: 'android-chrome-256x256.png' },
     { width: 512, height: 512, name: 'android-chrome-512x512.png' },
     
     // Microsoft Tiles
@@ -73,10 +75,11 @@ async function generateFavicons() {
     
     // Check if source file exists
     if (!fs.existsSync(CONFIG.sourceFile)) {
-      throw new Error(`Source file not found: ${CONFIG.sourceFile}`);
+      throw new Error(`Source file not found: ${CONFIG.sourceFile}\nPlease place your logo file at the root of the project as 'logo-source.png'`);
     }
     
-    // Create output directory if it doesn't exist
+    // Clean and create output directory
+    await rimrafAsync(CONFIG.outputDir);
     await mkdirp(CONFIG.outputDir);
     console.log(`📁 Output directory: ${CONFIG.outputDir}`);
     
@@ -106,7 +109,6 @@ async function generateFavicons() {
       // Handle different formats
       if (size.format === 'svg') {
         // For SVG, we'll just copy the source SVG if available
-        // In a real implementation, you might want to use SVGO to optimize it
         if (CONFIG.sourceFile.endsWith('.svg')) {
           await fs.promises.copyFile(CONFIG.sourceFile, outputPath);
         } else {
