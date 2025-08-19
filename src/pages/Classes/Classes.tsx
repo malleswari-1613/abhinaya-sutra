@@ -181,7 +181,7 @@ const Classes: React.FC = () => {
           <div className="testimonial-grid">
             <div className="testimonial-card">
               <div className="testimonial-content">
-                <p>"The instructors at Kala Sharadhi are incredibly knowledgeable and patient. My daughter has grown so much as a dancer here!"</p>
+                <p>"The instructors at Abhinaya Sutra are incredibly knowledgeable and patient. My daughter has grown so much as a dancer here!"</p>
               </div>
               <div className="testimonial-author">
                 <div className="author-avatar">

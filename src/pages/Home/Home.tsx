@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <div className="home">
       <div className="hero">
         <div className="hero-content">
-          <h1>Welcome to Kala Sharadhi</h1>
+          <h1>Welcome to Abhinaya Sutra</h1>
           <p>Experience the divine art of classical dance</p>
           <div className="hero-btns">
             <Link to="/classes" className="btn btn-primary">

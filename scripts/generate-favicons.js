@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Favicon Generator for Kala Sharadhi
+ * Favicon Generator for Abhinaya Sutra
  * 
  * This script generates favicons in various sizes and formats from a source image.
  * It creates all the necessary favicon files for different platforms and devices.
@@ -130,8 +130,8 @@ async function generateFavicons() {
     
     // Generate site.webmanifest content
     const manifest = {
-      name: 'Kala Sharadhi',
-      short_name: 'Kala Sharadhi',
+      name: 'Abhinaya Sutra',
+      short_name: 'Abhinaya Sutra',
       description: 'Classical Dance Academy',
       start_url: '/',
       display: 'standalone',

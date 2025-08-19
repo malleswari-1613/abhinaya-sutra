@@ -224,7 +224,7 @@ const Contact: React.FC = () => {
               
               <div className="map-container">
                 <iframe 
-                  title="Kala Sharadhi Location"
+                  title="Abhinaya Sutra Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2644778274856!2d72.82721431489948!3d18.96246998715076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6e0f1e994d%3A0x2b9f8a7e1f0d5b0f!2sGateway%20Of%20India%20Mumbai!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
                   width="100%" 
                   height="300" 

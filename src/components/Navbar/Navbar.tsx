@@ -67,8 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({
     <nav className={`navbar ${isMenuOpen ? 'mobile-menu-open' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Kala Sharadhi</span>
-          <span className="logo-subtext">School of Classical Dance</span>
+          <span className="logo-text">Abhinaya Sutra</span>
         </Link>
         
         <div className="menu-icon" onClick={toggleMenu} aria-label="Toggle menu">

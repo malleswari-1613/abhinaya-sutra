@@ -16,9 +16,9 @@ const About: React.FC = () => {
         <div className="container">
           <div className="about-grid">
             <div className="about-text">
-              <h2>Welcome to Kala Sharadhi</h2>
+              <h2>Welcome to Abhinaya Sutra</h2>
               <p>
-                Founded in 2010, Kala Sharadhi has been dedicated to preserving and promoting the rich heritage of classical dance forms. 
+                Founded in 2010, Abhinaya Sutra has been dedicated to preserving and promoting the rich heritage of classical dance forms. 
                 Our mission is to nurture talent and spread awareness about the beauty and depth of Indian classical dance.
               </p>
               <p>
