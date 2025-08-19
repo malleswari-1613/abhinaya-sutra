@@ -10,22 +10,22 @@ const Classes: React.FC = () => {
       title: 'Bharatanatyam for Beginners',
       description: 'Learn the fundamentals of Bharatanatyam, including basic adavus, hand gestures, and expressions.',
       level: 'Beginner',
-      ageGroup: '6+ years',
+      ageGroup: '4+ years',
       duration: '1 hour',
-      schedule: 'Mon, Wed, Fri - 4 PM to 5 PM',
-      instructor: 'Guru Priya Sharma',
-      image: 'https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      schedule: 'Tue, Thu - 4 PM to 9 PM',
+      instructor: 'Suhasini BV',
+      image: 'https://img.freepik.com/premium-vector/beautiful-cute-little-girl-dancing-indian-classical-dance_999766-3226.jpg'
     },
     {
       id: 2,
-      title: 'Intermediate Kathak',
-      description: 'Advance your Kathak skills with complex footwork, spins, and abhinaya (expressions).',
+      title: 'Intermediate Bharatanatyam',
+      description: 'Advance your skills with complex footwork, spins, and abhinaya (expressions).',
       level: 'Intermediate',
       ageGroup: '12+ years',
-      duration: '1.5 hours',
-      schedule: 'Tue, Thu - 5 PM to 6:30 PM',
-      instructor: 'Guru Rajesh Mehta',
-      image: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d808?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      duration: '1 hour',
+      schedule: 'Tue, Thu - 4 PM to 9 PM',
+      instructor: 'Suhasini BV',
+      image: 'https://www.natyasutraonline.com/uploads/category/share_img/bharathanatyam1.jpg'
     },
     {
       id: 3,
@@ -33,10 +33,10 @@ const Classes: React.FC = () => {
       description: 'Master complex jathis, varnams, and thillanas in this advanced level class.',
       level: 'Advanced',
       ageGroup: '16+ years',
-      duration: '2 hours',
-      schedule: 'Mon, Wed, Fri - 6 PM to 8 PM',
-      instructor: 'Guru Meenakshi Iyer',
-      image: 'https://images.unsplash.com/photo-1530103862676-de8c6de333e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      duration: '1 hour',
+      schedule: 'Tue, Thu - 4 PM to 9 PM',
+      instructor: 'Suhasini BV',
+      image: 'https://t3.ftcdn.net/jpg/04/53/28/00/360_F_453280016_WXzo1YtlLTkhzjHMM2veJp7IBKIRNdlV.jpg'
     },
     {
       id: 4,
@@ -44,32 +44,32 @@ const Classes: React.FC = () => {
       description: 'Fun introduction to classical dance for young children with basic movements and rhythm exercises.',
       level: 'Beginner',
       ageGroup: '4-6 years',
-      duration: '45 minutes',
-      schedule: 'Sat, Sun - 10 AM to 10:45 AM',
-      instructor: 'Guru Ananya Kapoor',
-      image: 'https://images.unsplash.com/photo-1533856493583-30c19163a352?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      duration: '1 hour',
+      schedule: 'Tue, Thu - 4 PM to 9 PM',
+      instructor: 'Suhasini BV',
+      image: 'https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/05/international-dance-day-activities.jpg'
     },
     {
       id: 5,
       title: 'Therapeutic Dance',
       description: 'Gentle dance movements combined with yoga for health and wellness.',
-      level: 'All Levels',
-      ageGroup: '18+ years',
+      level: 'All-levels',
+      ageGroup: '4+ years',
       duration: '1 hour',
-      schedule: 'Tue, Thu - 7 AM to 8 AM',
-      instructor: 'Guru Neha Verma',
-      image: 'https://images.unsplash.com/photo-1514525252781-2f9bcd159c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      schedule: 'Tue, Thu - 4 PM to 9 PM',
+      instructor: 'Suhasini BV',
+      image: 'https://thumbs.dreamstime.com/b/as-dance-therapy-session-comes-to-end-participants-sit-circle-reflecting-emotions-memories-surfaced-319215748.jpg'
     },
     {
       id: 6,
       title: 'Natyashastra & Theory',
       description: 'In-depth study of dance theory, history, and the Natyashastra text.',
-      level: 'Intermediate/Advanced',
-      ageGroup: '16+ years',
-      duration: '1.5 hours',
-      schedule: 'Sat - 11 AM to 12:30 PM',
-      instructor: 'Dr. Arvind Joshi',
-      image: 'https://images.unsplash.com/photo-1514525252781-2f9bcd159c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      level: 'intermediateadvanced',
+      ageGroup: '10+ years',
+      duration: '1 hour',
+      schedule: 'Tue, Thu - 4 PM to 9 PM',
+      instructor: 'Suhasini BV',
+      image: 'https://caleidoscope.in/wp-content/uploads/2023/02/Bharat-Muni-Natyashastra-02.jpg'
     }
   ];
 
@@ -79,7 +79,7 @@ const Classes: React.FC = () => {
       <section className="classes-hero">
         <div className="hero-content">
           <h1>Our Classes</h1>
-          <p>Discover the art of classical dance with our expert instructors</p>
+          <p>Discover the art of Panandallur Thanjavur Bharatanatyam with our expert instructor</p>
         </div>
       </section>
 
@@ -115,10 +115,7 @@ const Classes: React.FC = () => {
             <div className="filter-group">
               <label htmlFor="style-filter">Dance Style:</label>
               <select id="style-filter" className="filter-select">
-                <option value="all">All Styles</option>
-                <option value="bharatanatyam">Bharatanatyam</option>
-                <option value="kathak">Kathak</option>
-                <option value="theory">Theory</option>
+                <option value="bharatanatyam">Panandallur Thanjavur Bharatanatyam</option>
               </select>
             </div>
             
@@ -181,7 +178,7 @@ const Classes: React.FC = () => {
           <div className="testimonial-grid">
             <div className="testimonial-card">
               <div className="testimonial-content">
-                <p>"The instructors at Abhinaya Sutra are incredibly knowledgeable and patient. My daughter has grown so much as a dancer here!"</p>
+                <p>"The instructor at Abhinaya Sutra is incredibly knowledgeable and patient. My daughter has grown so much as a dancer here!"</p>
               </div>
               <div className="testimonial-author">
                 <div className="author-avatar">
@@ -196,7 +193,7 @@ const Classes: React.FC = () => {
             
             <div className="testimonial-card">
               <div className="testimonial-content">
-                <p>"As an adult beginner, I was nervous to start learning classical dance, but the welcoming environment made all the difference."</p>
+                <p>"As an adult beginner, I was nervous to start learning Bharatanatyam, but the welcoming environment made all the difference."</p>
               </div>
               <div className="testimonial-author">
                 <div className="author-avatar">

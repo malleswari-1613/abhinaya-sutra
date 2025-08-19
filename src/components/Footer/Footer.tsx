@@ -74,7 +74,7 @@ const Footer: React.FC<FooterProps> = ({ navLinks = [] }) => {
     },
     {
       icon: <FaClock />,
-      text: 'Tue & Thu: 6:00 PM - 9:00 PM',
+      text: 'Mon-Sun: 6:00 AM - 6:00 PM',
       url: ''
     },
   ];

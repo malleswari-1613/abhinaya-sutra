@@ -28,7 +28,7 @@ const navLinks: NavLink[] = [
   { path: '/about', label: 'About' },
   { path: '/gallery', label: 'Gallery' },
   { path: '/classes', label: 'Classes' },
-  { path: '/events', label: 'Events' },
+  // { path: '/events', label: 'Events' },
   { path: '/contact', label: 'Contact' },
 ];
 
@@ -62,7 +62,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/classes" element={<Classes />} />
-            <Route path="/events" element={<Events />} />
+            {/* <Route path="/events" element={<Events />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

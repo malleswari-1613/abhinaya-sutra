@@ -165,7 +165,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="info-text">
                     <h4>Our Studio</h4>
-                    <p>123 Dance Avenue<br />Mumbai, Maharashtra 400001<br />India</p>
+                    <p><br />HSR Layout, Bangalore<br />India</p>
                   </div>
                 </div>
                 
@@ -175,8 +175,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="info-text">
                     <h4>Phone</h4>
-                    <p><a href="tel:+911234567890">+91 12345 67890</a></p>
-                    <p className="small-text">Mon-Fri, 9:00 AM - 6:00 PM</p>
+                    <p><a href="tel:+917013316050">+91 7013316050</a></p>
+                    <p className="small-text">Mon-Sun, 9:00 AM - 6:00 PM</p>
                   </div>
                 </div>
                 
@@ -186,7 +186,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="info-text">
                     <h4>Email</h4>
-                    <p><a href="mailto:info@kalasharadhi.com">info@kalasharadhi.com</a></p>
+                    <p><a href="mailto:smalleswari759@gmail.com">smalleswari759@gmail.com</a></p>
                     <p className="small-text">We'll respond within 24 hours</p>
                   </div>
                 </div>
@@ -197,13 +197,11 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="info-text">
                     <h4>Studio Hours</h4>
-                    <p>Monday - Friday: 8:00 AM - 8:00 PM<br />
-                    Saturday: 9:00 AM - 5:00 PM<br />
-                    Sunday: 10:00 AM - 4:00 PM</p>
+                    <p>Tuesday - Thursday: 4:00 PM - 9:00 PM</p>
                   </div>
                 </div>
                 
-                <div className="social-links">
+                {/* <div className="social-links">
                   <h4>Follow Us</h4>
                   <div className="social-icons">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -219,13 +217,13 @@ const Contact: React.FC = () => {
                       <FaTwitter />
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="map-container">
                 <iframe 
                   title="Abhinaya Sutra Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2644778274856!2d72.82721431489948!3d18.96246998715076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6e0f1e994d%3A0x2b9f8a7e1f0d5b0f!2sGateway%20Of%20India%20Mumbai!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                  src="https://www.google.com/maps?q=12.9087272,77.6510138&z=17&hl=en&output=embed" 
                   width="100%" 
                   height="300" 
                   style={{ border: 0 }} 

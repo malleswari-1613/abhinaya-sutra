@@ -194,7 +194,11 @@
 }
 
 .level-badge.all-levels {
-  background: #9c27b0;
+  background: #c80c35;
+}
+
+.level-badge.intermediateadvanced {
+  background: #0cbfcf;
 }
 
 .class-details {
